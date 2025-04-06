@@ -5,12 +5,8 @@
 }
 
 
-/* Estilos simples para o cabeçalho */
 body {
-  font-family: Arial, sans-serif;
-}
-body {
-  font-family: 'Roboto', sans-serif; /* Usando a fonte Roboto */
+  font-family: 'Secular One', sans-serif; 
   margin: 0;
   padding: 0;
 }

@@ -1,33 +1,25 @@
-export function List() {
+export function List({ charactersData, currentCharacterIndex, changeCharacter }) {
   return (
-    <>
-      <ul className="button">
-        <li>
-          <button className="button cyberstorm selecionado" type="button" >
-            <img src="./src/assets/icone-cyberstorm.png" alt="Ícone Cyberstorm" />
+    <div className="character-navigation">
+      {charactersData.map((character, index) => {
+        // Asegurar que a primeira imagem sempre tenha 'cyberstorm' no nome
+        const imageFileName = (index === 0 ? 'cyberstorm' : character.name.toLowerCase().replace(/\s+/g, '-'));
+
+        return (
+          <button
+            type="button"
+            key={character.name}  // Usando o nome do personagem como chave
+            className={`character-button ${index === currentCharacterIndex ? 'active' : ''}`}
+            onClick={() => changeCharacter(index)}  // Passando o índice diretamente
+          >
+            <img
+              src={`./src/assets/icone-${imageFileName}.png`}  // Usando o nome correto para a imagem
+              alt={`Ícone ${character.name}`}
+              className={`character-icon ${index === currentCharacterIndex ? 'selected' : ''}`}
+            />
           </button>
-        </li>
-        <li>          
-          <button className="button codepixie" type="button">
-            <img src="./src/assets/icone-codepixie.png" alt="Ícone CodePixie" />
-          </button>
-        </li>
-        <li>
-          <button className="button hexblade" type="button">
-            <img src="./src/assets/icone-hexblade.png" alt="Ícone Hexblade" />
-          </button>
-        </li>
-        <li>
-          <button className="button neonpulse" type="button">
-            <img src="./src/assets/icone-neonpulse.png" alt="Ícone Neonpulse" />
-          </button>
-        </li>
-        <li>
-          <button className="button codebreaker" type="button">
-            <img src="./src/assets/icone-codebreaker.png" alt="Ícone Codebreaker" />
-          </button>
-        </li>
-      </ul>
-    </>
-  )
+        );
+      })}
+    </div>
+  );
 }

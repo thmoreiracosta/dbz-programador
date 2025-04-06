@@ -26,3 +26,38 @@ nav a:hover {
 nav a:focus {
   outline: none;
 }
+
+main .character {
+  display:none;
+  height: 100vh;
+  
+}
+
+main .character.select {
+  display: block;  
+}
+
+main .character .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  background-color: orange;
+  position: absolute;
+  top: 0;
+  left: 120px;
+  display: flex;
+  flex-direction: column;   
+  justify-content: center; 
+  height: 100vh;
+  max-width: 380px;
+}
+
+.content .name-character {
+  background-color: green;
+  color: #ffffff;
+
+
+}
