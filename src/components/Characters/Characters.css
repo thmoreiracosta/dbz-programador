@@ -43,8 +43,12 @@ main .character .image {
   object-fit: cover;
 }
 
-.content {
-  background-color: orange;
+main::after {
+  content: '😋😋😋😋'
+
+}
+
+.content {  
   position: absolute;
   top: 0;
   left: 120px;
@@ -55,9 +59,19 @@ main .character .image {
   max-width: 380px;
 }
 
-.content .name-character {
-  background-color: green;
+.content .name-character {  
   color: #ffffff;
-
-
+  font-size: 48px;
+  font-family: "Secular One";
+  font-weight: 400;
+  margin-bottom: 5px;
 }
+
+.content .description {  
+  color: #ffffff;
+  font-family: "Rubik";
+  font-size: 16px;
+  line-height: 22px;
+}
+
+
