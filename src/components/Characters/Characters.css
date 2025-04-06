@@ -1,0 +1,28 @@
+/* Estilo do cabeçalho e do menu de navegação */
+nav {
+  background-color: #9b59b6; /* Cor roxa clara para o fundo */
+  overflow: hidden;
+}
+
+/* Estilo dos links no menu */
+nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: all 0.3s ease; /* Transição suave para o efeito de hover */
+}
+
+/* Efeito hover: aumento do texto, fundo roxo escuro e texto branco */
+nav a:hover {
+  background-color: #8e44ad; /* Cor roxa mais escura para o fundo */
+  color: white;
+  transform: scale(1.1); /* Efeito de zoom */
+}
+
+/* Evita o aparecimento de texto cortado */
+nav a:focus {
+  outline: none;
+}
