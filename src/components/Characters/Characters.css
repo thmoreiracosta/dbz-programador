@@ -62,4 +62,33 @@ main::after {
     height: 100vh;
     margin-top: 50px;
   }
+
+  main::after{
+    background: linear-gradient (0deg, #000 45%, rgba(0, 0, 0.00) 70%) no-repeat;    
+    width: 100vw;  
+  }
+  main .character .image {
+    height: 155%;
+    object-position: center;
+  }
+
+  .content {
+    justify-content: flex-end;
+    left: 0;
+    top: -28%;
+    max-width: 60vw;
+    padding: 30px;
+  }
+
+  .content .name-character {
+    font-size: 36px;
+  }
+
+  .character-navigation {
+    flex-direction: row;  
+     
+    
+  }
+
+  
 }
