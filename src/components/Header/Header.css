@@ -1,0 +1,58 @@
+header {
+  background-color: rgb(24, 137, 145); /* Cor de fundo do cabeçalho */
+  height: 54px; /* Altura do cabeçalho */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 0 20px;
+}
+
+
+/* Estilo do cabeçalho e do menu de navegação */
+nav {
+  background-color: rgb(24, 137, 145); /* Cor roxa clara para o fundo */
+  position: fixed;
+  top: 0;
+  left: 0; /* Alinha à esquerda */
+  width: 100%; /* Faz o menu ocupar toda a largura da tela */
+  padding: 10px 0; /* Adiciona um pouco de espaçamento vertical */
+  z-index: 9999; /* Garante que o menu fique acima de outros elementos */
+}
+
+/* Estilo do container da navegação (a div que contém os links) */
+.nav {
+  display: flex; /* Flexbox para alinhar os itens horizontalmente */
+  justify-content: space-evenly; /* Distribui os itens igualmente ao longo do menu */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  width: 100%; /* Garante que o container ocupe toda a largura disponível */
+  padding: 0 20px; /* Adiciona espaçamento nas laterais para dar margem */
+}
+
+/* Estilo dos links no menu */
+nav a {
+  display: inline-block; /* Garante que os links fiquem ao lado uns dos outros */
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: all 0.3s ease; /* Transição suave para o efeito de hover */
+  cursor: pointer; /* Indica que o item é clicável */
+}
+
+/* Efeito hover: aumento do texto, fundo roxo escuro e texto branco */
+nav a:hover {
+  background-color: rgb(21, 86, 139); /* Cor roxa mais escura para o fundo */
+  color: white;
+  transform: scale(1.1); /* Efeito de zoom */
+}
+
+/* Evita o aparecimento de texto cortado */
+nav a:focus {
+  outline: none;
+}

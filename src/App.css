@@ -4,11 +4,13 @@
   font-style: normal;
 }
 
-
-body {
+html, body {
   font-family: 'Secular One', sans-serif; 
-  margin: 0;
-  padding: 0;
+  overflow-x: hidden; /* Desativa rolagem horizontal */
+  margin: 0; /* Remove qualquer margem extra */
+  padding: 0; /* Remove qualquer padding extra */
+  width: 100%; /* Garante que a largura não ultrapasse 100% */
+  box-size: 0;
+  
 }
-
 

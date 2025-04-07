@@ -1,0 +1,78 @@
+.character-navigation {
+  margin-top: 60px; /* Margin-top para iniciar abaixo do header */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.3);  
+  position: fixed;
+  top: 0; 
+  right: 0;
+  width: 180px;  
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 15px;
+  z-index: 5;
+}
+
+.character-button {
+  border: none;  
+  position: center;
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;  
+  border-radius: 50%;
+  
+}
+.character-button:hover {
+  transform: scale(1.2) translateY(-3px);
+  transition: transform 0.2s ease;
+}
+.character-button.selected:hover {
+  transform: scale(1.4) translateY(-8px);
+  transition: transform 0.2s ease;
+}
+
+.character-icon {
+  transition: transform 0.3s ease;
+  border: none;
+  border-radius: 50%;  
+}
+
+.character-icon.selected {
+  transform: scale(1.2);
+  box-shadow: 0 0 25px #d9d9d9;
+  border-radius: 50%;
+}
+
+
+
+
+
+/****************************************************/
+
+
+/* Mudando o box-shadow dependendo do nome do personagem */
+.character-icon.cyberstorm.selected {
+  box-shadow: 0 0 10px rgb(43, 190, 166);  
+}
+
+.character-icon.codepixie.selected {
+  box-shadow: 0 0 10px rgb(117, 17, 211)  
+}
+
+.character-icon.hexblade.selected {
+  box-shadow: 0 0 10px rgb(216, 172, 122);  
+}
+
+.character-icon.codebreaker.selected {
+  box-shadow: 0 0 10px rgb(218, 199, 34);  
+}
+
+.character-icon.neonpulse.selected {
+  box-shadow: 0 0 10px rgb(228, 48, 154);  
+}
+
+

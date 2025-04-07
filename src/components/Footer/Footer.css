@@ -1,0 +1,60 @@
+/* Estilo do Footer */
+.footer {
+  background-color: rgb(24, 137, 145); /* Cor de fundo */
+  color: white;
+  padding: 15px 20px; /* Reduzido o padding para diminuir o tamanho */
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 12px; /* Reduzido o tamanho da fonte */
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-text {
+  margin-bottom: 10px; /* Menor espaçamento entre as linhas */
+  font-size: 14px; /* Ajustado o tamanho da fonte */
+}
+
+.social-links {
+  margin: 10px 0; /* Diminuímos o espaçamento entre os links */
+}
+
+.social-icon {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px; /* Menor margem entre os ícones */
+  font-size: 16px; /* Tamanho reduzido dos ícones */
+  display: inline-block;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-icon i {
+  margin-right: 5px; /* Reduzido o espaço entre o ícone e o texto */
+}
+
+.social-icon:hover {
+  color: rgb(21, 86, 139); /* Cor roxa mais escura no hover */
+  transform: scale(1.1); /* Efeito de zoom ajustado */
+}
+
+.footer-credit p {
+  margin-top: 10px; /* Menor espaçamento */
+  font-size: 14px; /* Ajustado o tamanho da fonte */
+}
+
+.footer-credit a {
+  color: rgb(21, 86, 139); /* Cor do link */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-credit a:hover {
+  color: white;
+  text-decoration: underline;
+}

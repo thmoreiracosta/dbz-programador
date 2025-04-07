@@ -1,65 +1,46 @@
-/* Estilo do cabeçalho e do menu de navegação */
-nav {
-  background-color: #9b59b6; /* Cor roxa clara para o fundo */
-  overflow: hidden;
-}
-
-/* Estilo dos links no menu */
-nav a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-  transition: all 0.3s ease; /* Transição suave para o efeito de hover */
-}
-
-/* Efeito hover: aumento do texto, fundo roxo escuro e texto branco */
-nav a:hover {
-  background-color: #8e44ad; /* Cor roxa mais escura para o fundo */
-  color: white;
-  transform: scale(1.1); /* Efeito de zoom */
-}
-
-/* Evita o aparecimento de texto cortado */
-nav a:focus {
-  outline: none;
-}
-
 main .character {
-  display:none;
+  display: none;
   height: 100vh;
-  
+  margin-top: 50px;
 }
 
 main .character.select {
-  display: block;  
+  display: block;
 }
 
 main .character .image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  background-size: cover; /* Garante que a imagem cubra todo o espaço */
+  background-position: center; /* Ajusta a posição da imagem */
+  background-repeat: no-repeat;
+  
 }
 
 main::after {
-  content: '😋😋😋😋'
-
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 80vh;
+  background: linear-gradient(92deg, #000 25%, rgba(0, 0, 0, 0) 75%) no-repeat;
 }
 
-.content {  
+.content {
   position: absolute;
   top: 0;
   left: 120px;
   display: flex;
-  flex-direction: column;   
-  justify-content: center; 
+  flex-direction: column;
+  justify-content: center;
   height: 100vh;
   max-width: 380px;
+  z-index: 1;
 }
 
-.content .name-character {  
+.content .name-character {
   color: #ffffff;
   font-size: 48px;
   font-family: "Secular One";
@@ -67,11 +48,18 @@ main::after {
   margin-bottom: 5px;
 }
 
-.content .description {  
+.content .description {
   color: #ffffff;
   font-family: "Rubik";
   font-size: 16px;
   line-height: 22px;
 }
 
-
+/******** RESPANSIVIDADE **********/
+@media (max-width: 768px) {
+  main .character {
+    display: flex;
+    height: 100vh;
+    margin-top: 50px;
+  }
+}

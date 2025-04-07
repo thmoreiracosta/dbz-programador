@@ -1,3 +1,5 @@
+import './List.css';
+
 export function List({ charactersData, currentCharacterIndex, changeCharacter }) {
   return (
     <div className="character-navigation">
@@ -8,16 +10,17 @@ export function List({ charactersData, currentCharacterIndex, changeCharacter })
         return (
           <button
             type="button"
-            key={character.name}  // Usando o nome do personagem como chave
+            key={character.name}
             className={`character-button ${index === currentCharacterIndex ? 'active' : ''}`}
-            onClick={() => changeCharacter(index)}  // Passando o índice diretamente
+            onClick={() => changeCharacter(index)}
           >
             <img
-              src={`./src/assets/icone-${imageFileName}.png`}  // Usando o nome correto para a imagem
+              src={`./src/assets/icone-${imageFileName}.png`}
               alt={`Ícone ${character.name}`}
-              className={`character-icon ${index === currentCharacterIndex ? 'selected' : ''}`}
+              className={`character-icon ${index === currentCharacterIndex ? 'selected' : ''} ${character.name.toLowerCase()}`}
             />
           </button>
+
         );
       })}
     </div>
