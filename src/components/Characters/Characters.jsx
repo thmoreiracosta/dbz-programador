@@ -3,6 +3,7 @@ import { charactersData } from '../../data/charactersData';
 import { List } from '../List/List'
 import './Characters.css';
 
+//tentando o deploy
 export function Characters() {
   // Estado para controlar o personagem atual, começando pelo primeiro personagem
   const [currentCharacterIndex, setCurrentCharacterIndex] = useState(0);
