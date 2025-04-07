@@ -1,4 +1,7 @@
 import './Footer.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
+
 
 export function Footer() {
   return (
