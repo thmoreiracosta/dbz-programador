@@ -2,7 +2,7 @@
   "name": "dbz",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://thmoreiracosta.github.io/dbz-programador/",
+  "homepage": "https://thmoreiracosta.github.io/dbz-programador",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist --repo https://github.com/thmoreiracosta/dbz-programador"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
